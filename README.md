@@ -1,12 +1,13 @@
 # Express API Starter
 
-A simple [Express](https://expressjs.com/) API starter with some sample middleware and routes that you can deploy to [Heroku](https://www.heroku.com/). This starter also includes some basic [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) configuration files.
+A simple [Express](https://expressjs.com/) API starter with some sample middleware and routes that you can deploy to [Heroku](https://www.heroku.com/). This starter also includes some basic [ESLint](https://eslint.org/), [Jest](https://jestjs.io/) and [Prettier](https://prettier.io/) configuration files.
 
 ## 💯 Features
 
 - ES6
 - [ESLint](https://eslint.org/) – For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript).
 - [Express](https://expressjs.com/) – As the API framework.
+- [Jest](https://jestjs.io/) – For testing.
 - [JWT](https://jwt.io/) – As the token signing and verification library.
 - [Node.js](https://nodejs.org/)
 - [PM2](http://pm2.keymetrics.io/) – As the process manager for [Node.js](https://nodejs.org/).
@@ -46,24 +47,15 @@ my-app
 ├── node_modules
 ├── src
 │   ├── middleware
-│   │   ├── auth.js
-│   │   ├── common.js
-│   │   ├── cors.js
-│   │   ├── errorHandlers.js
-│   │   ├── helmet.js
-│   │   └── index.js
 │   ├── routes
 │   │   ├── auth
-│   │   │   └── authRoutes.js
 │   │   └── health
-│   │       └── healthRoutes.js
 │   ├── utils
-│   │   ├── constants.js
-│   │   ├── errorHandler.js
-│   │   ├── httpErrors.js
-│   │   ├── index.js
-│   │   └── tokenService.js
 │   └── server.js
+├── tests
+│   ├── integration
+│   ├── mockData
+│   └── unit
 ├── .env.example
 ├── .eslintrc.js
 ├── .gitignore
@@ -79,23 +71,27 @@ my-app
 
 2. **`/src`**: This directory contains the code source files.
 
-3. **`.env`**: This file contains the environment variables.
+3. **`/src`**: This directory contains the tests.
 
-4. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
+4. **`.env`**: This file contains the environment variables.
 
-5. **`.gitignore`**: This file tells Git which files to ignore.
+5. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
 
-6. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
+6. **`.gitignore`**: This file tells Git which files to ignore.
 
-7. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
+7. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
 
-8. **`.process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
+8. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
 
-9. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+9. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
 
-10. **`README.md`**: This file contains information about this project.
+10. **`.process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
 
-11. **`yarn.lock`**: This file is generated automatically by [Yarn](https://yarnpkg.com/) and contains the exact versions of the installed project dependencies.
+11. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+
+12. **`README.md`**: This file contains information about this project.
+
+13. **`yarn.lock`**: This file is generated automatically by [Yarn](https://yarnpkg.com/) and contains the exact versions of the installed project dependencies.
 
 ## 💥 Available Commands
 
@@ -123,7 +119,19 @@ Runs the server logs. You will see any server errors in the console.
 yarn lint
 ```
 
-Runs ESLint using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript). You will see any lint errors in the console.
+Runs [ESLint](https://eslint.org/) using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript). You will see any lint errors in the console.
+
+```sh
+yarn test
+```
+
+Runs [Jest](https://jestjs.io/). You will see the test results in the console.
+
+```sh
+yarn test:watch
+```
+
+Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in the console. [Jest](https://jestjs.io/) will re-run the tests if you make edits.
 
 ```sh
 yarn serve
