@@ -72,7 +72,7 @@ my-app
 
 2. **`/src`**: This directory contains the code source files.
 
-3. **`/src`**: This directory contains the tests.
+3. **`/tests`**: This directory contains the tests.
 
 4. **`.env`**: This file contains the environment variables.
 
