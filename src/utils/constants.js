@@ -1,6 +1,7 @@
 const dotenv = require('dotenv');
 
-if (process.env.NODE_ENV === 'development') dotenv.config();
+if (process.env.NODE_ENV === 'test' || process.env.NODE_ENV === 'development')
+  dotenv.config();
 
 exports.CORS_WHITELIST = [
   'https://dev.my-app.com',

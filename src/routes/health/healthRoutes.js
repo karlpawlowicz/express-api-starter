@@ -1,12 +1,9 @@
 const express = require('express');
 
+const healthController = require('./healthController');
+
 const router = express.Router();
 
-// @route   GET api/health
-// @desc    Return status ok
-// @access  Public
-router.route('/').get(async (req, res) => {
-  res.json({ data: [{ status: 'ok' }] });
-});
+router.route('/').get(healthController.getStatus);
 
 exports.router = router;
