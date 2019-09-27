@@ -68,8 +68,26 @@ describe('authController.createToken', () => {
     expect(next).toBeCalledWith(errorMessage);
   });
 
+  it('should return 400 status code if a username is empty', () => {
+    req.body = { username: '', password: 'Test' };
+    const errorMessage = new HTTP400Error();
+
+    authController.createToken(req, res, next);
+
+    expect(next).toBeCalledWith(errorMessage);
+  });
+
   it('should return 400 status code if a password is missing', () => {
     req.body = { username: 'Test' };
+    const errorMessage = new HTTP400Error();
+
+    authController.createToken(req, res, next);
+
+    expect(next).toBeCalledWith(errorMessage);
+  });
+
+  it('should return 400 status code if a password is empty', () => {
+    req.body = { username: 'Test', password: '' };
     const errorMessage = new HTTP400Error();
 
     authController.createToken(req, res, next);
