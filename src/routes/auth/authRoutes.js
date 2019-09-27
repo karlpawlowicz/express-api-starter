@@ -9,7 +9,7 @@ const router = express.Router();
 // @route   POST api/auth
 // @desc    Generate token
 // @access  Public
-router.route('/').post((req, res, next) => {
+exports.createToken = (req, res, next) => {
   let { password, username } = req.body;
 
   try {
@@ -17,7 +17,6 @@ router.route('/').post((req, res, next) => {
 
     username = validator.escape(validator.trim(username));
     password = validator.escape(validator.trim(password));
-
     const userId = username;
 
     const token = tokenService.generateToken({ id: userId });
@@ -26,6 +25,8 @@ router.route('/').post((req, res, next) => {
   } catch (e) {
     next(e);
   }
-});
+};
+
+router.route('/').post(this.createToken);
 
 exports.router = router;

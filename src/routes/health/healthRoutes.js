@@ -5,8 +5,10 @@ const router = express.Router();
 // @route   GET api/health
 // @desc    Return status ok
 // @access  Public
-router.route('/').get(async (req, res) => {
+exports.getStatus = async (req, res) => {
   res.json({ data: [{ status: 'ok' }] });
-});
+};
+
+router.route('/').get(this.getStatus);
 
 exports.router = router;
