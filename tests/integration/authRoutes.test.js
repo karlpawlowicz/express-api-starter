@@ -5,7 +5,7 @@ const userCredentials = require('../mockData/userCredentials.json');
 const tokenService = require('../../src/utils/tokenService');
 const http400Error = require('../mockData/http400Error.json');
 
-const endpoint = '/api/auth/';
+const endpoint = '/api/auth';
 
 describe(endpoint, () => {
   test(`POST ${endpoint}`, async () => {
@@ -24,7 +24,7 @@ describe(endpoint, () => {
     expect(response.body.data[0].token).toStrictEqual(token);
   });
 
-  it(`should return 400 status code if request body is empty on POST ${endpoint}`, async () => {
+  it(`should return 400 status code if a request body is empty on POST ${endpoint}`, async () => {
     const response = await request(router)
       .post(endpoint)
       .send({});
@@ -33,7 +33,7 @@ describe(endpoint, () => {
     expect(response.body).toStrictEqual(http400Error);
   });
 
-  it(`should return 400 status code if username is missing on POST ${endpoint}`, async () => {
+  it(`should return 400 status code if a username is missing on POST ${endpoint}`, async () => {
     const response = await request(router)
       .post(endpoint)
       .send({ password: 'Test' });
@@ -42,7 +42,7 @@ describe(endpoint, () => {
     expect(response.body).toStrictEqual(http400Error);
   });
 
-  it(`should return 400 status code if password is missing on POST ${endpoint}`, async () => {
+  it(`should return 400 status code if a password is missing on POST ${endpoint}`, async () => {
     const response = await request(router)
       .post(endpoint)
       .send({ username: 'Test' });

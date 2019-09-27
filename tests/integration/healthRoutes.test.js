@@ -3,7 +3,7 @@ const request = require('supertest');
 const router = require('../../src/router');
 const status = require('../mockData/status.json');
 
-const endpoint = '/api/health/';
+const endpoint = '/api/health';
 
 describe(endpoint, () => {
   test(`GET ${endpoint}`, async () => {
