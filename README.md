@@ -51,6 +51,7 @@ my-app
 │   │   ├── auth
 │   │   └── health
 │   ├── utils
+│   ├── router.js
 │   └── server.js
 ├── tests
 │   ├── integration
