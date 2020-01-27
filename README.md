@@ -44,6 +44,7 @@ Initial project structure:
 
 ```
 my-app
+├── .vscode
 ├── node_modules
 ├── src
 │   ├── middleware
@@ -68,31 +69,33 @@ my-app
 └── yarn.lock
 ```
 
-1. **`/node_modules`**: This directory contains the project dependencies.
+1. **`/.vscode`**: This directory contains the [VS Code](https://code.visualstudio.com/) workspace settings file.
 
-2. **`/src`**: This directory contains the code source files.
+2. **`/node_modules`**: This directory contains the project dependencies.
 
-3. **`/tests`**: This directory contains the tests.
+3. **`/src`**: This directory contains the code source files.
 
-4. **`.env`**: This file contains the environment variables.
+4. **`/tests`**: This directory contains the tests.
 
-5. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
+5. **`.env`**: This file contains the environment variables.
 
-6. **`.gitignore`**: This file tells Git which files to ignore.
+6. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
 
-7. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
+7. **`.gitignore`**: This file tells Git which files to ignore.
 
-8. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
+8. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
 
-9. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
+9. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
 
-10. **`.process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
+10. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
 
-11. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+11. **`.process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
 
-12. **`README.md`**: This file contains information about this project.
+12. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
 
-13. **`yarn.lock`**: This file is generated automatically by [Yarn](https://yarnpkg.com/) and contains the exact versions of the installed project dependencies.
+13. **`README.md`**: This file contains information about this project.
+
+14. **`yarn.lock`**: This file is generated automatically by [Yarn](https://yarnpkg.com/) and contains the exact versions of the installed project dependencies.
 
 ## 💥 Available Commands
 
