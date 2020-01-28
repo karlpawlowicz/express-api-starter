@@ -5,7 +5,6 @@ const middleware = require('./middleware');
 const { router: authRoutes } = require('./routes/auth/authRoutes');
 const { router: healthRoutes } = require('./routes/health/healthRoutes');
 const errorHandlers = require('./middleware/errorHandlers');
-const { PORT } = require('./utils/constants');
 
 const router = express();
 
