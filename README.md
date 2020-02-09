@@ -45,6 +45,7 @@ Initial project structure:
 ```
 my-app
 ├── .vscode
+├── logs
 ├── node_modules
 ├── src
 │   ├── middleware
@@ -71,23 +72,23 @@ my-app
 
 1. **`/.vscode`**: This directory contains the [VS Code](https://code.visualstudio.com/) workspace settings file.
 
-2. **`/node_modules`**: This directory contains the project dependencies.
+2. **`/logs`**: This directory will contain the log files.
 
-3. **`/src`**: This directory contains the code source files.
+3. **`/node_modules`**: This directory contains the project dependencies.
 
-4. **`/tests`**: This directory contains the tests.
+4. **`/src`**: This directory contains the code source files.
 
-5. **`.env`**: This file contains the environment variables.
+5. **`/tests`**: This directory contains the tests.
 
-6. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
+6. **`.env`**: This file contains the environment variables.
 
-7. **`.gitignore`**: This file tells Git which files to ignore.
+7. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
 
-8. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
+8. **`.gitignore`**: This file tells Git which files to ignore.
 
-9. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
+9. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
 
-10. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
+10. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
 
 11. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
 
