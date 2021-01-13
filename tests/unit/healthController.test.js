@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const httpMocks = require('node-mocks-http');
 
 const healthController = require('../../src/routes/health/healthController');
