@@ -27,7 +27,7 @@ A simple [Express](https://expressjs.com/) API starter with some sample middlewa
    Move into your new project’s directory and install the dependencies.
 
    ```sh
-   cd my-app && yarn
+   cd my-app && npm install
    ```
 
 3. **Run the server.**
@@ -35,7 +35,7 @@ A simple [Express](https://expressjs.com/) API starter with some sample middlewa
    Run the server in development mode. The server is now running at `http://localhost:3001` and will reload if you make edits.
 
    ```sh
-   yarn start
+   npm start
    ```
 
 ## 🏗️ Project Structure
@@ -63,10 +63,10 @@ my-app
 ├── .gitignore
 ├── .prettierrc
 ├── package.json
+├── package-lock.json
 ├── process.config.js
 ├── Procfile
-├── README.md
-└── yarn.lock
+└── README.md
 ```
 
 1. **`/.vscode`**: This directory contains the [VS Code](https://code.visualstudio.com/) workspace settings file.
@@ -89,62 +89,62 @@ my-app
 
 10. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
 
-11. **`.process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
+11. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
 
-12. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+12. **`process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
 
-13. **`README.md`**: This file contains information about this project.
+13. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
 
-14. **`yarn.lock`**: This file is generated automatically by [Yarn](https://yarnpkg.com/) and contains the exact versions of the installed project dependencies.
+14. **`README.md`**: This file contains information about this project.
 
 ## 💥 Available Commands
 
 In your new project’s directory you can run:
 
 ```sh
-yarn start
+npm start
 ```
 
 Runs the server in development mode. The server is now running at `http://localhost:3001` and will reload if you make edits.
 
 ```sh
-yarn stop
+npm stop
 ```
 
 Stops the server.
 
 ```sh
-yarn logs
+npm run logs
 ```
 
 Runs the server logs. You will see any server errors in the console.
 
 ```sh
-yarn lint
+npm run lint
 ```
 
 Runs [ESLint](https://eslint.org/) using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript). You will see any lint errors in the console.
 
 ```sh
-yarn test
+npm test
 ```
 
 Runs [Jest](https://jestjs.io/). You will see the test results in the console.
 
 ```sh
-yarn test:watch
+npm run test:watch
 ```
 
 Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in the console. [Jest](https://jestjs.io/) will re-run the tests if you make edits.
 
 ```sh
-yarn serve
+npm run serve
 ```
 
 Runs the server in production mode.
 
 ```sh
-yarn serve:heroku
+npm run serve:heroku
 ```
 
 Runs the server without [PM2](http://pm2.keymetrics.io/).
