@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const request = require('supertest');
 
 const router = require('../../src/router');

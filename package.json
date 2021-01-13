@@ -2,16 +2,11 @@
   "name": "express-api-starter",
   "version": "0.0.1",
   "description": "A simple Express API starter",
-  "main": "src/server.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:karlpawlowicz/express-api-starter.git"
+    "url": "https://github.com/karlpawlowicz/express-api-starter.git"
   },
-  "author": {
-    "name": "Karl Pawlowicz",
-    "email": "karlpawlowicz@gmail.com",
-    "url": "https://karlpawlowicz.com"
-  },
+  "author": "Karl Pawlowicz <karlpawlowicz@gmail.com> (https://karl.dev/)",
   "license": "ISC",
   "private": true,
   "homepage": "https://github.com/karlpawlowicz/express-api-starter#readme",
@@ -19,7 +14,7 @@
     "url": "https://github.com/karlpawlowicz/express-api-starter/issues"
   },
   "scripts": {
-    "lint": "eslint ./src",
+    "lint": "eslint .",
     "logs": "pm2 logs my-app",
     "serve": "pm2 start process.config.js --env production",
     "serve:heroku": "node src/server.js",
@@ -49,11 +44,8 @@
     "lint-staged": "^10.0.7",
     "node-mocks-http": "^1.8.0",
     "pm2": "^3.5.1",
+    "prettier": "^2.2.1",
     "supertest": "^4.0.2"
-  },
-  "engines": {
-    "node": "10.16.3",
-    "yarn": "1.17.3"
   },
   "husky": {
     "hooks": {
@@ -62,7 +54,9 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint",
+      "eslint ."
+    ],
+    "*.{css,js,json,jsx,md,scss,ts,tsx}": [
       "prettier --write"
     ]
   }

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const request = require('supertest');
 
 const router = require('../../src/router');
@@ -9,9 +11,7 @@ const endpoint = '/api/auth';
 
 describe(endpoint, () => {
   test(`POST ${endpoint}`, async () => {
-    const response = await request(router)
-      .post(endpoint)
-      .send(userCredentials);
+    const response = await request(router).post(endpoint).send(userCredentials);
 
     const { username } = userCredentials;
     const userId = username;
@@ -25,9 +25,7 @@ describe(endpoint, () => {
   });
 
   it(`should return 400 status code if a request body is empty on POST ${endpoint}`, async () => {
-    const response = await request(router)
-      .post(endpoint)
-      .send({});
+    const response = await request(router).post(endpoint).send({});
 
     expect(response.statusCode).toBe(400);
     expect(response.body).toStrictEqual(http400Error);
