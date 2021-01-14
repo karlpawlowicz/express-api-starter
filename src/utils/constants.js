@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'test' || process.env.NODE_ENV === 'development')
 exports.CORS_WHITELIST = [
   'https://dev.my-app.com',
   'https://staging.my-app.com',
-  'https://my-app.com'
+  'https://my-app.com',
 ];
 exports.PORT = process.env.PORT;
 exports.SECRET = process.env.SECRET;

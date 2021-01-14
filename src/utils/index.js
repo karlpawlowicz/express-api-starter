@@ -1,5 +1,5 @@
 exports.applyMiddleware = (middlewareWrapper, router) => {
-  middlewareWrapper.map(wrapper => {
+  middlewareWrapper.map((wrapper) => {
     return wrapper(router);
   });
 };
