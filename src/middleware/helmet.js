@@ -1,5 +1,5 @@
 const helmet = require('helmet');
 
-exports.handleHelmet = router => {
+exports.handleHelmet = (router) => {
   router.use(helmet());
 };
