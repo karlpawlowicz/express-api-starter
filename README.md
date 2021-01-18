@@ -90,13 +90,15 @@ my-app
 
 10. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
 
-11. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
+11. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
 
-12. **`process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
+12. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
 
-13. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+13. **`process.config.js`**: This file contains the configuration for [PM2](http://pm2.keymetrics.io/).
 
-14. **`README.md`**: This file contains information about this project.
+14. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+
+15. **`README.md`**: This file contains information about this project.
 
 ## 💥 Available Commands
 

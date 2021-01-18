@@ -8,11 +8,11 @@ if (process.env.NODE_ENV === 'production')
   accessLogStream = fs.createWriteStream(
     path.join(__dirname, '../../logs/access.log'),
     {
-      flags: 'a'
+      flags: 'a',
     }
   );
 
-exports.handleMorgan = router => {
+exports.handleMorgan = (router) => {
   if (process.env.NODE_ENV === 'production')
     router.use(morgan('combined', { stream: accessLogStream }));
   else router.use(morgan('dev'));

@@ -7,5 +7,5 @@ module.exports = [
   handleHelmet,
   handleCORS,
   handleRequestBodyParsing,
-  handleMorgan
+  handleMorgan,
 ];
