@@ -14,7 +14,7 @@
     "url": "https://github.com/karlpawlowicz/express-api-starter/issues"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{css,js,json,jsx,md,scss,ts,tsx}\"",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "logs": "pm2 logs my-app",
