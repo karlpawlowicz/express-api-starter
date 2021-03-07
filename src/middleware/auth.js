@@ -15,10 +15,10 @@ module.exports = (req, res, next) => {
       req.token = decoded;
 
       next();
-    } catch (e) {
+    } catch (error) {
       throw new HTTP401Error();
     }
-  } catch (e) {
-    next(e);
+  } catch (error) {
+    next(error);
   }
 };

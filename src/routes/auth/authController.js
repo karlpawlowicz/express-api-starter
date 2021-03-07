@@ -23,7 +23,7 @@ exports.createToken = (req, res, next) => {
     const token = tokenService.generateToken({ id: userId });
 
     res.status(201).json({ data: [{ token }] });
-  } catch (e) {
-    next(e);
+  } catch (error) {
+    next(error);
   }
 };
