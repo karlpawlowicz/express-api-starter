@@ -1,20 +1,24 @@
 const { HTTP404Error, HTTPClientError } = require('./httpErrors');
 
-exports.clientError = (err, req, res, next) => {
-  if (err instanceof HTTPClientError)
-    res.status(err.statusCode).json({ error: err.message });
-  else next(err);
+exports.clientError = (error, req, res, next) => {
+  if (error instanceof HTTPClientError) {
+    res.status(error.statusCode).json({ error: error.message });
+  } else {
+    next(error);
+  }
 };
 
 exports.notFoundError = () => {
   throw new HTTP404Error('Method Not Found');
 };
 
-exports.serverError = (err, req, res) => {
+exports.serverError = (error, req, res) => {
   // eslint-disable-next-line
-  console.error(err);
+  console.error(error);
 
-  if (process.env.NODE_ENV === 'production')
+  if (process.env.NODE_ENV === 'production') {
     res.status(500).json({ error: 'Internal Server Error' });
-  else res.status(500).send(err.stack);
+  } else {
+    res.status(500).send(error.stack);
+  }
 };
