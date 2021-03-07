@@ -11,12 +11,16 @@ exports.createToken = (req, res, next) => {
   let { password, username } = req.body;
 
   try {
-    if (!username || !password) throw new HTTP400Error();
+    if (!username || !password) {
+      throw new HTTP400Error();
+    }
 
     username = validator.escape(validator.trim(username));
     password = validator.escape(validator.trim(password));
 
-    if (!username || !password) throw new HTTP400Error();
+    if (!username || !password) {
+      throw new HTTP400Error();
+    }
 
     const userId = username;
 

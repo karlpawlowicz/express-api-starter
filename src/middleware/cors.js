@@ -5,8 +5,11 @@ const { HTTP401Error } = require('../utils/httpErrors');
 
 const corsOptions = {
   origin: (origin, callback) => {
-    if (CORS_WHITELIST.indexOf(origin) !== -1 || !origin) callback(null, true);
-    else callback(new HTTP401Error());
+    if (CORS_WHITELIST.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new HTTP401Error());
+    }
   },
 };
 

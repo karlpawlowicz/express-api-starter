@@ -5,7 +5,9 @@ module.exports = (req, res, next) => {
   const authHeader = req.get('Authorization');
 
   try {
-    if (!authHeader) throw new HTTP401Error();
+    if (!authHeader) {
+      throw new HTTP401Error();
+    }
 
     // eslint-disable-next-line
     const [prefix, token] = authHeader.split(' ');
