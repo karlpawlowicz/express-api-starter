@@ -8,6 +8,4 @@ exports.generateToken = (user) => {
   return jwt.sign(payload, SECRET, { expiresIn: '1h' });
 };
 
-exports.verifyToken = (token) => {
-  return jwt.verify(token, SECRET);
-};
+exports.verifyToken = (token) => jwt.verify(token, SECRET);

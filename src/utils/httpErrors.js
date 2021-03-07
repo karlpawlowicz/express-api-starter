@@ -1,3 +1,5 @@
+/* eslint-disable max-classes-per-file */
+
 class HTTPClientError extends Error {
   constructor(message) {
     if (message instanceof Object) super(JSON.stringify(message));

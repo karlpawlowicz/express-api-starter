@@ -1,6 +1,7 @@
-// @route   GET api/health
-// @desc    Return status ok
-// @access  Public
-exports.getStatus = async (req, res) => {
+/**
+ * Return status ok.
+ * @route GET api/health
+ */
+exports.getStatus = (req, res) => {
   res.json({ data: [{ status: 'ok' }] });
 };
