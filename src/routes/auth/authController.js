@@ -3,9 +3,10 @@ const validator = require('validator');
 const { HTTP400Error } = require('../../utils/httpErrors');
 const tokenService = require('../../utils/tokenService');
 
-// @route   POST api/auth
-// @desc    Generate token
-// @access  Public
+/**
+ * Validate the username and password and generate a JWT token with the username embedded as an id.
+ * @route POST api/auth
+ */
 exports.createToken = (req, res, next) => {
   let { password, username } = req.body;
 
