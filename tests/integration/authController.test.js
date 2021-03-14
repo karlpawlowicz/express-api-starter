@@ -43,7 +43,7 @@ describe(endpoint, () => {
   it(`should return 400 status code if a username is empty on POST ${endpoint}`, async () => {
     const response = await request(router)
       .post(endpoint)
-      .send({ username: '', password: 'Test' });
+      .send({ password: 'Test', username: '' });
 
     expect(response.statusCode).toBe(400);
     expect(response.body).toStrictEqual(http400Error);
@@ -61,7 +61,7 @@ describe(endpoint, () => {
   it(`should return 400 status code if a password is empty on POST ${endpoint}`, async () => {
     const response = await request(router)
       .post(endpoint)
-      .send({ username: 'Test', password: '' });
+      .send({ password: '', username: 'Test' });
 
     expect(response.statusCode).toBe(400);
     expect(response.body).toStrictEqual(http400Error);

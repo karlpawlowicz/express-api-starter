@@ -18,7 +18,7 @@ class HTTPClientError extends Error {
 exports.HTTPClientError = HTTPClientError;
 
 class HTTP400Error extends HTTPClientError {
-  constructor(message = 'Bad Request') {
+  constructor(message = 'Bad request') {
     super(message);
 
     this.statusCode = 400;
@@ -48,7 +48,7 @@ class HTTP403Error extends HTTPClientError {
 exports.HTTP403Error = HTTP403Error;
 
 class HTTP404Error extends HTTPClientError {
-  constructor(message = 'Not Found') {
+  constructor(message = 'Not found') {
     super(message);
 
     this.statusCode = 404;
