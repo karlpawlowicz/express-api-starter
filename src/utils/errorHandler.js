@@ -9,7 +9,7 @@ exports.clientError = (error, req, res, next) => {
 };
 
 exports.notFoundError = () => {
-  throw new HTTP404Error('Method Not Found');
+  throw new HTTP404Error('Method not found');
 };
 
 exports.serverError = (error, req, res) => {
@@ -17,7 +17,7 @@ exports.serverError = (error, req, res) => {
   console.error(error);
 
   if (process.env.NODE_ENV === 'production') {
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal server error' });
   } else {
     res.status(500).send(error.stack);
   }

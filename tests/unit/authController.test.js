@@ -71,7 +71,7 @@ describe('authController.createToken', () => {
   });
 
   it('should return 400 status code if a username is empty', () => {
-    req.body = { username: '', password: 'Test' };
+    req.body = { password: 'Test', username: '' };
     const errorMessage = new HTTP400Error();
 
     authController.createToken(req, res, next);
@@ -89,7 +89,7 @@ describe('authController.createToken', () => {
   });
 
   it('should return 400 status code if a password is empty', () => {
-    req.body = { username: 'Test', password: '' };
+    req.body = { password: '', username: 'Test' };
     const errorMessage = new HTTP400Error();
 
     authController.createToken(req, res, next);
