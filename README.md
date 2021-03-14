@@ -204,7 +204,7 @@ You can deploy this app to [Heroku](https://www.heroku.com/) with the included `
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+See [CONTRIBUTING.MD](./CONTRIBUTING.md).
 
 ## 🧐 License
 

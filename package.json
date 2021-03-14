@@ -1,7 +1,7 @@
 {
   "name": "express-api-starter",
   "version": "0.0.1",
-  "description": "A simple Express API starter",
+  "description": "An Express API starter with some sample middleware and routes that you can deploy to AWS or Heroku",
   "repository": {
     "type": "git",
     "url": "https://github.com/karlpawlowicz/express-api-starter.git"
