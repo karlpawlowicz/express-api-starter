@@ -1,0 +1,6 @@
+{
+  "name": "Express API Starter",
+  "description": "An Express API starter with some sample middleware and routes that you can deploy to AWS or Heroku",
+  "keywords": ["express"],
+  "repository": "https://github.com/karlpawlowicz/express-api-starter"
+}
