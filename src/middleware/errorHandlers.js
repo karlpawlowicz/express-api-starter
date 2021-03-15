@@ -1,13 +1,13 @@
 const ErrorHandler = require('../utils/errorHandler');
 
-const handleClientError = (router) => {
-  router.use(ErrorHandler.clientError);
-};
-
 const handleNotFoundError = (router) => {
   router.use('*', () => {
     ErrorHandler.notFoundError();
   });
+};
+
+const handleClientError = (router) => {
+  router.use(ErrorHandler.clientError);
 };
 
 const handleServerError = (router) => {
