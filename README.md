@@ -5,8 +5,8 @@ A simple Express API starter with some sample middleware and routes that you can
 ## ✨ Features
 
 - [Conventional Commits](https://www.conventionalcommits.org/) – As the specification for commit messages.
-- [commitlint](https://commitlint.js.org/) - For commit message linting.
 - [Commitizen](http://commitizen.github.io/cz-cli/) - For commit message formatting.
+- [commitlint](https://commitlint.js.org/) - For commit message linting.
 - [ESLint](https://eslint.org/) – For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
 - [Express](https://expressjs.com/) – As the [Node.js](https://nodejs.org/) framework.
 - [GitHub Actions](https://github.com/features/actions) - For CI/CD.
