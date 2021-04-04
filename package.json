@@ -23,6 +23,7 @@
     "start": "pm2 start process.config.js",
     "stop": "pm2 delete process.config.js",
     "test": "NODE_ENV=test jest",
+    "test:ci": "jest",
     "test:watch": "NODE_ENV=test jest --watchAll"
   },
   "dependencies": {
