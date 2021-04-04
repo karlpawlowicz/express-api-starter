@@ -5,6 +5,8 @@ A simple Express API starter with some sample middleware and routes that you can
 ## ✨ Features
 
 - [Conventional Commits](https://www.conventionalcommits.org/) – As the specification for commit messages.
+- [Commitizen](http://commitizen.github.io/cz-cli/) - For commit message formatting.
+- [commitlint](https://commitlint.js.org/) - For commit message linting.
 - [ESLint](https://eslint.org/) – For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
 - [Express](https://expressjs.com/) – As the [Node.js](https://nodejs.org/) framework.
 - [GitHub Actions](https://github.com/features/actions) - For CI/CD.
@@ -14,7 +16,7 @@ A simple Express API starter with some sample middleware and routes that you can
 - [Passport](http://www.passportjs.org/) – As the authentication middleware.
 - [PM2](https://pm2.keymetrics.io/) – As the process manager for [Node.js](https://nodejs.org/).
 - [Prettier](https://prettier.io/) - For code formatting.
-- [semantic-release](https://github.com/semantic-release/semantic-release) – For automating the package release workflow.
+- [semantic-release](https://semantic-release.gitbook.io/) – For automating the package release workflow.
 - [Serverless Express](https://github.com/vendia/serverless-express) – For deploying this starter to [AWS](https://aws.amazon.com/).
 - [Swagger](https://swagger.io/) – For API documentation.
 
