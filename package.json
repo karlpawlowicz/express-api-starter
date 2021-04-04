@@ -23,6 +23,7 @@
     "start": "pm2 start process.config.js",
     "stop": "pm2 delete process.config.js",
     "test": "NODE_ENV=test jest",
+    "test:ci": "NODE_ENV=ci jest",
     "test:watch": "NODE_ENV=test jest --watchAll"
   },
   "dependencies": {
@@ -40,7 +41,7 @@
   "devDependencies": {
     "eslint": "^7.17.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "husky": "^4.3.7",
     "jest": "^26.6.3",
