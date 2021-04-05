@@ -76,11 +76,11 @@ my-app
 ├── app.json
 ├── commitlint.config.js
 ├── CONTRIBUTING.md
+├── ecosystem.config.js
 ├── jest.config.js
 ├── LICENSE
 ├── package-lock.json
 ├── package.json
-├── process.config.js
 ├── Procfile
 ├── README.md
 └── release.config.js
@@ -118,15 +118,15 @@ my-app
 
 16. **`CONTRIBUTING.MD`**: This file contains information about contributing.
 
-17. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
+17. **`ecosystem.config.js`**: This file contains the configuration for [PM2](https://pm2.keymetrics.io/).
 
-18. **`LICENSE`**: This starter uses the [MIT License](./LICENSE).
+18. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
 
-19. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
+19. **`LICENSE`**: This starter uses the [MIT License](./LICENSE).
 
-20. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
+20. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
 
-21. **`process.config.js`**: This file contains the configuration for [PM2](https://pm2.keymetrics.io/).
+21. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
 
 22. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
 

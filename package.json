@@ -18,10 +18,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "logs": "pm2 logs my-app",
-    "serve": "pm2 start process.config.js --env production",
+    "serve": "pm2 start ecosystem.config.js --env production",
     "serve:heroku": "node src/server.js",
-    "start": "pm2 start process.config.js",
-    "stop": "pm2 delete process.config.js",
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 delete ecosystem.config.js",
     "test": "NODE_ENV=test jest",
     "test:ci": "NODE_ENV=ci jest",
     "test:watch": "NODE_ENV=test jest --watchAll"
