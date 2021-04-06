@@ -4,9 +4,9 @@ A simple Express API starter with some sample middleware and routes that you can
 
 ## ✨ Features
 
-- [Conventional Commits](https://www.conventionalcommits.org/) – As the specification for commit messages.
 - [Commitizen](http://commitizen.github.io/cz-cli/) - For commit message formatting.
 - [commitlint](https://commitlint.js.org/) - For commit message linting.
+- [Conventional Commits](https://www.conventionalcommits.org/) – As the specification for commit messages.
 - [ESLint](https://eslint.org/) – For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
 - [Express](https://expressjs.com/) – As the [Node.js](https://nodejs.org/) framework.
 - [GitHub Actions](https://github.com/features/actions) - For CI/CD.
@@ -17,7 +17,7 @@ A simple Express API starter with some sample middleware and routes that you can
 - [PM2](https://pm2.keymetrics.io/) – As the process manager for [Node.js](https://nodejs.org/).
 - [Prettier](https://prettier.io/) - For code formatting.
 - [semantic-release](https://semantic-release.gitbook.io/) – For automating the package release workflow.
-- [Serverless Express](https://github.com/vendia/serverless-express) – For deploying this starter to [AWS](https://aws.amazon.com/).
+- [Serverless Express](https://github.com/vendia/serverless-express) – For deploying to [AWS](https://aws.amazon.com/).
 - [Swagger](https://swagger.io/) – For API documentation.
 
 ## 🚀 Quick Start
@@ -67,12 +67,12 @@ my-app
 │   ├── integration
 │   ├── mockData
 │   └── unit
-├── .env.example
+├── .env
 ├── .eslintrc.js
 ├── .gitignore
 ├── .nvmrc
 ├── .prettierignore
-├── .prettierrc
+├── .prettierrc.js
 ├── app.json
 ├── commitlint.config.js
 ├── CONTRIBUTING.md
@@ -110,9 +110,9 @@ my-app
 
 12. **`.prettierignore`**: This file tells [Prettier](https://prettier.io/) which files to ignore.
 
-13. **`.prettierrc`**: This file contains the configuration for [Prettier](https://prettier.io/).
+13. **`.prettierrc.js`**: This file contains the configuration for [Prettier](https://prettier.io/).
 
-14. **`app.json`**: This file contains the manifest for [Heroku](https://www.heroku.com/) apps.
+14. **`app.json`**: This file contains the manifest for this [Heroku](https://www.heroku.com/) app.
 
 15. **`commitlint.config.js`**: This file contains the configuration for [commitlint](https://commitlint.js.org/).
 
@@ -132,7 +132,7 @@ my-app
 
 23. **`README.md`**: This file contains information about this project.
 
-24. **`release.config.js`**: This file contains cofiguration for [semantic-release](https://github.com/semantic-release/semantic-release).
+24. **`release.config.js`**: This file contains the cofiguration for [semantic-release](https://github.com/semantic-release/semantic-release).
 
 ## 🤖 Available Commands
 
@@ -142,7 +142,7 @@ In your new project’s directory, you can run:
 npm run format
 ```
 
-Runs [Prettier](https://prettier.io/) on `css`, `js`, `json`, `jsx`, `md`, `scss`, `ts` and `tsx` file extensions.
+Runs [Prettier](https://prettier.io/) on `css`, `js`, `json`, `jsx`, `md`, `scss`, `ts`, and `tsx` file extensions.
 
 ```shell
 npm run lint
@@ -196,7 +196,7 @@ Runs [Jest](https://jestjs.io/). You will see the test results in the console.
 npm run test:watch
 ```
 
-Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in the console. [Jest](https://jestjs.io/) will re-run the tests if you make edits.
+Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in the console. [Jest](https://jestjs.io/) will rerun the tests if you make edits.
 
 ## 💫 Deploy
 
