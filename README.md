@@ -4,21 +4,21 @@ A simple Express API starter with some sample middleware and routes that you can
 
 ## ✨ Features
 
-- [Commitizen](http://commitizen.github.io/cz-cli/) - For commit message formatting.
-- [commitlint](https://commitlint.js.org/) - For commit message linting.
-- [Conventional Commits](https://www.conventionalcommits.org/) – As the specification for commit messages.
-- [ESLint](https://eslint.org/) – For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
-- [Express](https://expressjs.com/) – As the [Node.js](https://nodejs.org/) framework.
-- [GitHub Actions](https://github.com/features/actions) - For CI/CD.
-- [Jest](https://jestjs.io/) – As the testing framework.
-- [lint-staged](https://github.com/okonet/lint-staged) - For pre-commit code formatting and linting.
+- [Commitizen](http://commitizen.github.io/cz-cli/)—for commit message formatting.
+- [commitlint](https://commitlint.js.org/)—for commit message linting.
+- [Conventional Commits](https://www.conventionalcommits.org/)—as the specification for commit messages.
+- [ESLint](https://eslint.org/)—for linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
+- [Express](https://expressjs.com/)—as the [Node.js](https://nodejs.org/) framework.
+- [GitHub Actions](https://github.com/features/actions)—for CI/CD.
+- [Jest](https://jestjs.io/)—as the testing framework.
+- [lint-staged](https://github.com/okonet/lint-staged)—for pre-commit code formatting and linting.
 - [Node.js](https://nodejs.org/)
-- [Passport](http://www.passportjs.org/) – As the authentication middleware.
-- [PM2](https://pm2.keymetrics.io/) – As the process manager for [Node.js](https://nodejs.org/).
-- [Prettier](https://prettier.io/) - For code formatting.
-- [semantic-release](https://semantic-release.gitbook.io/) – For automating the package release workflow.
-- [Serverless Express](https://github.com/vendia/serverless-express) – For deploying to [AWS](https://aws.amazon.com/).
-- [Swagger](https://swagger.io/) – For API documentation.
+- [Passport](http://www.passportjs.org/)—as the authentication middleware.
+- [PM2](https://pm2.keymetrics.io/)—as the process manager for [Node.js](https://nodejs.org/).
+- [Prettier](https://prettier.io/)—for code formatting.
+- [semantic-release](https://semantic-release.gitbook.io/)—for automating the package release workflow.
+- [Serverless Express](https://github.com/vendia/serverless-express)—for deploying to [AWS](https://aws.amazon.com/).
+- [Swagger](https://swagger.io/)—for API documentation.
 
 ## 🚀 Quick Start
 
@@ -86,53 +86,53 @@ my-app
 └── release.config.js
 ```
 
-1. **`/.github`**: This directory contains [GitHub](https://github.com/)-related files.
+1. `/.github`—this directory contains [GitHub](https://github.com/)-related files.
 
-2. **`/.vscode`**: This directory contains the user and workspace settings file for [VS Code](https://code.visualstudio.com/).
+2. `/.vscode`—this directory contains the user and workspace settings file for [VS Code](https://code.visualstudio.com/).
 
-3. **`/logs`**: This directory contains the log files.
+3. `/logs`—this directory contains the log files.
 
-4. **`/node_modules`**: This directory contains the project dependencies.
+4. `/node_modules`—this directory contains the project dependencies.
 
-5. **`/scripts`**: This directory contains the script files.
+5. `/scripts`—this directory contains the script files.
 
-6. **`/src`**: This directory contains the code source files.
+6. `/src`—this directory contains the code source files.
 
-7. **`/tests`**: This directory contains the tests.
+7. `/tests`—this directory contains the tests.
 
-8. **`.env`**: This file contains the environment variables.
+8. `.env`—this file contains the environment variables.
 
-9. **`.eslintrc.js`**: This file contains the configuration for [ESLint](https://eslint.org/).
+9. `.eslintrc.js`—this file contains the configuration for [ESLint](https://eslint.org/).
 
-10. **`.gitignore`**: This file tells [Git](https://git-scm.com/) which files to ignore.
+10. `.gitignore`—this file tells [Git](https://git-scm.com/) which files to ignore.
 
-11. **`.nvmrc`**: This file tells [nvm](https://github.com/nvm-sh/nvm) which version to use.
+11. `.nvmrc`—this file tells [nvm](https://github.com/nvm-sh/nvm) which version to use.
 
-12. **`.prettierignore`**: This file tells [Prettier](https://prettier.io/) which files to ignore.
+12. `.prettierignore`—this file tells [Prettier](https://prettier.io/) which files to ignore.
 
-13. **`.prettierrc.js`**: This file contains the configuration for [Prettier](https://prettier.io/).
+13. `.prettierrc.js`—this file contains the configuration for [Prettier](https://prettier.io/).
 
-14. **`app.json`**: This file contains the manifest for this [Heroku](https://www.heroku.com/) app.
+14. `app.json`—this file contains the manifest for this [Heroku](https://www.heroku.com/) app.
 
-15. **`commitlint.config.js`**: This file contains the configuration for [commitlint](https://commitlint.js.org/).
+15. `commitlint.config.js`—this file contains the configuration for [commitlint](https://commitlint.js.org/).
 
-16. **`CONTRIBUTING.MD`**: This file contains information about contributing.
+16. `CONTRIBUTING.MD`—this file contains information about contributing.
 
-17. **`ecosystem.config.js`**: This file contains the configuration for [PM2](https://pm2.keymetrics.io/).
+17. `ecosystem.config.js`—this file contains the configuration for [PM2](https://pm2.keymetrics.io/).
 
-18. **`jest.config.js`**: This file contains the configuration for [Jest](https://jestjs.io/).
+18. `jest.config.js`—this file contains the configuration for [Jest](https://jestjs.io/).
 
-19. **`LICENSE`**: This starter uses the [MIT License](./LICENSE).
+19. `LICENSE`—this starter uses the [MIT License](./LICENSE).
 
-20. **`package-lock.json`**: This file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
+20. `package-lock.json`—this file is generated automatically by [npm](https://www.npmjs.com/) and contains the exact versions of the installed project dependencies.
 
-21. **`package.json`**: This file contains the manifest for this [Node.js](https://nodejs.org/) project.
+21. `package.json`—this file contains the manifest for this [Node.js](https://nodejs.org/) project.
 
-22. **`Procfile`**: This file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
+22. `Procfile`—this file contains the commands that are executed by the app on startup on [Heroku](https://www.heroku.com/).
 
-23. **`README.md`**: This file contains information about this project.
+23. `README.md`—this file contains information about this project.
 
-24. **`release.config.js`**: This file contains the cofiguration for [semantic-release](https://github.com/semantic-release/semantic-release).
+24. `release.config.js`—this file contains the cofiguration for [semantic-release](https://github.com/semantic-release/semantic-release).
 
 ## 🤖 Available Commands
 
