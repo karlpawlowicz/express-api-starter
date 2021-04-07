@@ -12,7 +12,7 @@ A simple Express API starter with some sample middleware and routes that you can
 - **[GitHub Actions](https://github.com/features/actions)**: For CI/CD.
 - **[Jest](https://jestjs.io/)**: As the testing framework.
 - **[lint-staged](https://github.com/okonet/lint-staged)**: For pre-commit code formatting and linting.
-- **[Node.js](https://nodejs.org/)
+- **[Node.js](https://nodejs.org/)**
 - **[Passport](http://www.passportjs.org/)**: As the authentication middleware.
 - **[PM2](https://pm2.keymetrics.io/)**: As the process manager for [Node.js](https://nodejs.org/).
 - **[Prettier](https://prettier.io/)**: For code formatting.
