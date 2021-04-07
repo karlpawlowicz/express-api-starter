@@ -24,7 +24,7 @@ A simple Express API starter with some sample middleware and routes that you can
 
 1. **Clone the repo.**
 
-   Clone the repo and run the `onClone.js` script after cloning.
+   Clone the repo and run the `onClone.js` script.
 
    ```shell
    git clone https://github.com/karlpawlowicz/express-api-starter.git my-app && node my-app/scripts/onClone.js
