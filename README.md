@@ -50,7 +50,7 @@ A simple Express API starter with some sample middleware and routes that you can
 
 Initial project structure:
 
-```
+```shell
 my-app
 ├── .github
 ├── .vscode
