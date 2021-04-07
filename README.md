@@ -4,21 +4,21 @@ A simple Express API starter with some sample middleware and routes that you can
 
 ## ✨ Features
 
-- [Commitizen](http://commitizen.github.io/cz-cli/) - For commit message formatting.
-- [commitlint](https://commitlint.js.org/) - For commit message linting.
-- [Conventional Commits](https://www.conventionalcommits.org/) – As the specification for commit messages.
-- [ESLint](https://eslint.org/) – For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
-- [Express](https://expressjs.com/) – As the [Node.js](https://nodejs.org/) framework.
-- [GitHub Actions](https://github.com/features/actions) - For CI/CD.
-- [Jest](https://jestjs.io/) – As the testing framework.
-- [lint-staged](https://github.com/okonet/lint-staged) - For pre-commit code formatting and linting.
-- [Node.js](https://nodejs.org/)
-- [Passport](http://www.passportjs.org/) – As the authentication middleware.
-- [PM2](https://pm2.keymetrics.io/) – As the process manager for [Node.js](https://nodejs.org/).
-- [Prettier](https://prettier.io/) - For code formatting.
-- [semantic-release](https://semantic-release.gitbook.io/) – For automating the package release workflow.
-- [Serverless Express](https://github.com/vendia/serverless-express) – For deploying to [AWS](https://aws.amazon.com/).
-- [Swagger](https://swagger.io/) – For API documentation.
+- **[Commitizen](http://commitizen.github.io/cz-cli/)**: For commit message formatting.
+- **[commitlint](https://commitlint.js.org/)**: For commit message linting.
+- **[Conventional Commits](https://www.conventionalcommits.org/)**: As the specification for commit messages.
+- **[ESLint](https://eslint.org/)**: For linting using the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
+- **[Express](https://expressjs.com/)**: As the [Node.js](https://nodejs.org/) framework.
+- **[GitHub Actions](https://github.com/features/actions)**: For CI/CD.
+- **[Jest](https://jestjs.io/)**: As the testing framework.
+- **[lint-staged](https://github.com/okonet/lint-staged)**: For pre-commit code formatting and linting.
+- **[Node.js](https://nodejs.org/)
+- **[Passport](http://www.passportjs.org/)**: As the authentication middleware.
+- **[PM2](https://pm2.keymetrics.io/)**: As the process manager for [Node.js](https://nodejs.org/).
+- **[Prettier](https://prettier.io/)**: For code formatting.
+- **[semantic-release](https://semantic-release.gitbook.io/)**: For automating the package release workflow.
+- **[Serverless Express](https://github.com/vendia/serverless-express)**: For deploying to [AWS](https://aws.amazon.com/).
+- **[Swagger](https://swagger.io/)**: For API documentation.
 
 ## 🚀 Quick Start
 
