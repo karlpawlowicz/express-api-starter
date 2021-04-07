@@ -32,7 +32,7 @@ A simple Express API starter with some sample middleware and routes that you can
 
 2. **Install the dependencies.**
 
-   Move into your new project’s directory and install the dependencies.
+   Move into the project directory and install the dependencies.
 
    ```shell
    cd my-app && npm install
@@ -96,7 +96,7 @@ my-app
 
 5. `/scripts`—this directory contains the script files.
 
-6. `/src`—this directory contains the code source files.
+6. `/src`—this directory contains the source code files.
 
 7. `/tests`—this directory contains the tests.
 
@@ -132,11 +132,11 @@ my-app
 
 23. `README.md`—this file contains information about this project.
 
-24. `release.config.js`—this file contains the cofiguration for [semantic-release](https://github.com/semantic-release/semantic-release).
+24. `release.config.js`—this file contains the configuration for [semantic-release](https://github.com/semantic-release/semantic-release).
 
 ## 🤖 Available Commands
 
-In your new project’s directory, you can run:
+In the project directory, you can run:
 
 ```shell
 npm run format
