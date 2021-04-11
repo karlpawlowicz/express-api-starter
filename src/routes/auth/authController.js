@@ -5,7 +5,7 @@ const tokenService = require('../../utils/tokenService');
 
 /**
  * Validate the username and password and generate a JWT token with the username embedded as an id.
- * @route POST /api/auth
+ * @route POST /auth
  */
 exports.createToken = (req, res, next) => {
   let { password, username } = req.body;

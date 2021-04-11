@@ -7,7 +7,7 @@ const userCredentials = require('../mockData/userCredentials.json');
 const tokenService = require('../../src/utils/tokenService');
 const http400Error = require('../mockData/http400Error.json');
 
-const endpoint = '/api/auth';
+const endpoint = '/auth';
 
 describe(endpoint, () => {
   test(`POST ${endpoint}`, async () => {

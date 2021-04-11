@@ -1,0 +1,28 @@
+service: express-api-starter
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+  environment:
+    NODE_ENV: ${env:NODE_ENV}
+    PORT: ${env:PORT}
+    SECRET: ${env:SECRET}
+    FOO: ${env:FOO}
+    BAR: ${env:BAR}
+    BAZ: ${env:BAZ}
+
+functions:
+  api:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{proxy+}
+          method: ANY

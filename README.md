@@ -17,7 +17,7 @@ A simple Express API starter with some sample middleware and routes that you can
 - [PM2](https://pm2.keymetrics.io/)—as the process manager for [Node.js](https://nodejs.org/).
 - [Prettier](https://prettier.io/)—for code formatting.
 - [semantic-release](https://semantic-release.gitbook.io/)—for automating the package release workflow.
-- [Serverless Express](https://github.com/vendia/serverless-express)—for deploying to [AWS](https://aws.amazon.com/).
+- [Serverless Framework](https://www.serverless.com/)—for deploying to [AWS](https://aws.amazon.com/).
 - [Swagger](https://swagger.io/)—for API documentation.
 
 ## 🚀 Quick Start
