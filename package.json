@@ -14,6 +14,8 @@
     "url": "https://github.com/karlpawlowicz/express-api-starter/issues"
   },
   "scripts": {
+    "deploy": "serverless deploy",
+    "deploy:prod": "serverless deploy --stage prod",
     "format": "prettier --write \"**/*.{css,js,json,jsx,md,scss,ts,tsx}\"",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
