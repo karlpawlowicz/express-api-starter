@@ -210,7 +210,7 @@ Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in 
 
 2. **Add your AWS Credentials.**
 
-   Add your AWS credentials to the `.env` file. For more information read [this](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
+   Add your [AWS](https://aws.amazon.com/) credentials in the `.env` file. For more information, see [this](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
 
 ### Heroku
 
