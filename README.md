@@ -200,6 +200,20 @@ Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in 
 
 ## 💫 Deploy
 
+### AWS
+
+1. **Install the Serverless Framework CLI.**
+
+   ```shell
+   npm install -g serverless
+   ```
+
+2. **Add your AWS Credentials.**
+
+   Add your AWS credentials to the `.env` file. For more information read [this](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
+
+### Heroku
+
 You can deploy this app to [Heroku](https://www.heroku.com/) with the included `Procfile`, which will run the `serve:heroku` command after the dependencies finish installing.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
