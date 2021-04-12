@@ -11,6 +11,6 @@ exports.CORS_WHITELIST = [
 ];
 exports.PORT = process.env.PORT;
 exports.SECRET = process.env.SECRET;
-exports.SOME_API_KEY = process.env.SOME_API_KEY;
-exports.SOME_API_PASSWORD = process.env.SOME_API_PASSWORD;
-exports.SOME_API_URI = process.env.SOME_API_URI;
+exports.FOO = process.env.FOO;
+exports.BAR = process.env.BAR;
+exports.BAZ = process.env.BAZ;

@@ -10,8 +10,8 @@ const router = express();
 
 applyMiddleware(middleware, router);
 
-router.use('/api/auth', authRoutes);
-router.use('/api/health', healthRoutes);
+router.use('/auth', authRoutes);
+router.use('/health', healthRoutes);
 
 applyMiddleware(errorHandlers, router);
 

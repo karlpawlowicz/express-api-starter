@@ -17,7 +17,7 @@ A simple Express API starter with some sample middleware and routes that you can
 - [PM2](https://pm2.keymetrics.io/)—as the process manager for [Node.js](https://nodejs.org/).
 - [Prettier](https://prettier.io/)—for code formatting.
 - [semantic-release](https://semantic-release.gitbook.io/)—for automating the package release workflow.
-- [Serverless Express](https://github.com/vendia/serverless-express)—for deploying to [AWS](https://aws.amazon.com/).
+- [Serverless Framework](https://www.serverless.com/)—for deploying to [AWS](https://aws.amazon.com/).
 - [Swagger](https://swagger.io/)—for API documentation.
 
 ## 🚀 Quick Start
@@ -199,6 +199,20 @@ npm run test:watch
 Runs [Jest](https://jestjs.io/) in watch mode. You will see the test results in the console. [Jest](https://jestjs.io/) will rerun the tests if you make edits.
 
 ## 💫 Deploy
+
+### AWS
+
+1. **Install the Serverless Framework CLI.**
+
+   ```shell
+   npm install -g serverless
+   ```
+
+2. **Add your AWS Credentials.**
+
+   Add your [AWS](https://aws.amazon.com/) credentials in the `.env` file. For more information, see [this](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
+
+### Heroku
 
 You can deploy this app to [Heroku](https://www.heroku.com/) with the included `Procfile`, which will run the `serve:heroku` command after the dependencies finish installing.
 
